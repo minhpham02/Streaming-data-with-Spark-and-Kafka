@@ -31,7 +31,7 @@ Get the Jupyter Notebook URL + Token accessing the spark container
 Access the container bash
 ```
 docker exec -it docker_spark_1 bash
-```
+
 Then, get the notebook URL. Copy and paste the URL in the browser.
 ```
 jupyter notebook list
