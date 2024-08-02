@@ -20,13 +20,13 @@ It will start the following services:
   * Image: bitnami/zookeeper
   * Port: 2181
 * kafka: 
-  * Image: bitnami/kafka:2.11-1.1.1 
+  * Image: bitnami/kafka:
   * Port: 9092
 * spark: 
   * Image: jupyter/all-spark-notebook
   * Port: 8888
 
-4. Get the Jupyter Notebook URL + Token accessing the spark container
+Get the Jupyter Notebook URL + Token accessing the spark container
 
 Access the container bash
 ```
@@ -37,8 +37,8 @@ Then, get the notebook URL. Copy and paste the URL in the browser.
 jupyter notebook list
 ```
 
-5. Run the `event-producer.ipynb` notebook to start producing events from changes in Wikipedia pages to a Kafka topic. More information about the Wikipedia event [here](https://wikitech.wikimedia.org/wiki/Event_Platform/EventStreams).
+Run the `event-producer.ipynb` notebook to start producing events from changes in Wikipedia pages to a Kafka topic. More information about the Wikipedia event [here](https://wikitech.wikimedia.org/wiki/Event_Platform/EventStreams).
    
-6. Run the `event-consumer-spark.ipynb` notebook to start consuming events from the Kafka topic and write it in parquet files.
+Run the `event-consumer-spark.ipynb` notebook to start consuming events from the Kafka topic and write it in parquet files.
    
-7. Run the `data-visualization.ipynb` notebook to read the parquet files as streaming and visualize the top 10 users that have more edits. 
+Run the `data-visualization.ipynb` notebook to read the parquet files as streaming and visualize the top 10 users that have more edits. 
